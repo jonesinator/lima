@@ -1066,7 +1066,7 @@ func Accel(arch limayaml.Arch) string {
 	if limayaml.IsNativeArch(arch) {
 		switch runtime.GOOS {
 		case "darwin":
-			return "hvf"
+			return "tcg"
 		case "linux":
 			return "kvm"
 		case "netbsd":
